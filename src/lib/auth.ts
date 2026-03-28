@@ -9,9 +9,6 @@ export const auth = betterAuth({
     }),
     secret: process.env.BETTER_AUTH_SECRET,
     baseURL: process.env.BETTER_AUTH_URL || "http://localhost:3000",
-    advanced: {
-        trustHost: true,
-    },
     socialProviders: {
         github: {
             clientId: process.env.GITHUB_CLIENT_ID!,
